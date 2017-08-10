@@ -1,4 +1,5 @@
 <?php
+
 namespace Xdm\Ipnet\Commands;
 
 use Illuminate\Console\Command;

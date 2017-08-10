@@ -12,12 +12,12 @@ class IpnetServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $defer = true;
+    protected $defer = false;
 
     public function boot()
     {
         $this->publishes([
-            __DIR__ . DIRECTORY_SEPARATOR . 'Config' . DIRECTORY_SEPARATOR . 'ipnet.php' => config_path('ipnet.php'),
+            __DIR__ . '/Config/ipnet.php' => config_path('ipnet.php'),
         ]);
     }
 
