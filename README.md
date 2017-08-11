@@ -2,7 +2,8 @@
 - 1、composer require "Xdm/ipnet"
 - 2、在config/app中添加Xdm\Ipnet\IpnetServiceProvider::class
 - 3、执行命令php artisan vendor:publish --provider="Xdm\Ipnet\IpnetServiceProvider", 生成配置文件ipnet.php
-- 4、执行命令php artisan ipnet:update下载解析IP需要的数据源文件
+- 4、在ipnet.php文件中配置token(token为http://www.ipip.net/付费购买后获得)
+- 5、执行命令php artisan ipnet:update下载解析IP需要的数据源文件
 - 5、调用方法：
 ```
 use Xdm\Ipnet\Ipx;
